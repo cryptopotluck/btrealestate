@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'PIL',
     'django.contrib.humanize',
     'accounts.apps.AccountsConfig',
+    'contacts.apps.ContactsConfig',
 
 ]
 
@@ -143,3 +144,11 @@ MESSAGE_TAGS = {
     messages.ERROR: 'danger',
 
 }
+
+#Email Config
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'austinkiese@gmail.com'
+EMAIL_HOST_PASSWORD = '12a10l1k'
+EMAIL_USE_TLS = True
